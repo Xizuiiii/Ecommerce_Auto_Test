@@ -1,4 +1,6 @@
-# Ecommerce API E2E Tests
+# Ecommerce_Auto_Test
+
+## Ecommerce API E2E Tests
 
 This project runs live API tests against DummyJSON by default and can optionally run a Selenium UI smoke test against Sauce Demo.
 
