@@ -22,6 +22,12 @@ C:\Users\Zebra\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\p
 python -m pytest -q
 ```
 
+If the project virtual environment is unavailable, use the bundled Codex runtime:
+
+```powershell
+C:\Users\Zebra\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe -m pytest -q
+```
+
 The default credentials are DummyJSON public test credentials:
 
 ```powershell
@@ -36,4 +42,9 @@ $env:SHOP_API_PASSWORD = "emilyspass"
 python -m pytest -q --run-ui
 ```
 
-The UI test requires Microsoft Edge and a compatible WebDriver setup.
+The UI test runs Edge in headless mode by default and requires Microsoft Edge plus a compatible WebDriver setup. To see the browser window:
+
+```powershell
+$env:SHOP_UI_HEADLESS = "0"
+python -m pytest -q --run-ui
+```

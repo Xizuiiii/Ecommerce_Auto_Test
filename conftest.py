@@ -3,7 +3,7 @@ import os
 import pytest
 
 try:
-    from APITests.api_client import ShopApiClient
+    from api_client import ShopApiClient
 except ModuleNotFoundError:
     from api_client import ShopApiClient
 
